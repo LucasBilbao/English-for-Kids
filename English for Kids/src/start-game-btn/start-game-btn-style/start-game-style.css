@@ -1,0 +1,45 @@
+.btn-container {
+  position: absolute;
+  top: 2rem;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+.btn-container > button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.btn-container > .game-btn {
+  border: 2px solid gray;
+  padding: 20px 50px;
+  font-size: 2.8125rem;
+  cursor: pointer;
+  background: #448144;
+  border-radius: 50px;
+  color: white;
+}
+
+.game-btn:active {
+  box-shadow: inset 8px 10px 20px 0px black;
+  background: #037b0e;
+}
+
+.game-btn > img {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 1160px) {
+  .btn-container {
+    top: 13rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .btn-container {
+    top: 25rem;
+  }
+}

@@ -1,0 +1,14 @@
+.background > img {
+  height: 100vh;
+  object-fit: cover;
+  transform: rotate(180deg);
+  filter: brightness(75%);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.514);
+}
+
+h1.card-header {
+  color: rgb(0, 0, 0);
+}

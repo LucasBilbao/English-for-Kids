@@ -1,0 +1,32 @@
+.card {
+  position: relative;
+}
+
+.flip-icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.flip-icon:hover {
+  width: 30px;
+  height: 30px;
+  bottom: 10px;
+  right: 10px;
+}
+
+.flip,
+.flip:hover {
+  transform: none;
+  transform: rotateY(180deg);
+}
+
+.disable {
+  display: none;
+}
+
+.card-header {
+  transition: all ease-out 400ms;
+}

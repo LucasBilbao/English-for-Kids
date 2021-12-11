@@ -1,0 +1,25 @@
+body {
+  background: #8706d1;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.background > img {
+  height: 100vh;
+  object-fit: cover;
+  transform: rotate(180deg);
+  filter: brightness(75%);
+}
+
+.card {
+  background: rgba(38, 0, 255, 0.76);
+}
+
+h1.card-header {
+  color: rgb(255, 255, 255);
+}

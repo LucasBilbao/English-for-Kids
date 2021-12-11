@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: absolute;
+  top: 3%;
+  right: 4%;
+  opacity: 1;
+  width: 310px;
+}
+
+.toggle-btn {
+  margin: 0;
+  box-sizing: content-box;
+  position: relative;
+  width: 300px;
+  height: 80px;
+  background: rgb(0, 99, 255);
+  border-radius: 50px;
+  padding: 5px;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+  box-shadow: inset -4px -1px 6px 0px black;
+}
+
+.toggle-btn > .inner-circle {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  transition: all 500ms ease-in-out;
+}
+
+.toggle-btn.activate {
+  background: rgb(254 0 0 / 82%);
+  box-shadow: inset 4px -1px 6px 0px black;
+}
+
+.toggle-btn.activate > .inner-circle {
+  margin-left: 220px;
+}
+
+.toggle-btn > .mode {
+  position: absolute;
+  font-size: 50px;
+  font-family: 'Roboto';
+  padding: 0;
+  margin: 0;
+  right: 0;
+  margin-right: 50px;
+  margin-top: 10px;
+  transition: all 500ms ease-in-out;
+  color: white;
+}
+
+.toggle-btn.activate > .mode {
+  margin-right: 150px;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    top: 12rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
