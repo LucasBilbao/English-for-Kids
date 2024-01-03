@@ -44,7 +44,7 @@ export function playGame() {
       audios[audiosKeys[index]].play();
     }, 1000);
     window.onclick = (e) => {
-      e.getGrandparentElement = e.path[2];
+      e.getGrandparentElement = e.target.parentElement.parentElement;
       if (audiosKeys.has(e.getGrandparentElement.id)) {
         if (clickedCorrect(audiosKeys[index], e.getGrandparentElement.id)) {
           setTimeout(() => {
