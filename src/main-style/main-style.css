@@ -1,0 +1,137 @@
+html {
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  border: 1px solid black;
+  margin-bottom: 20px;
+  border-radius: 0.5rem;
+  margin: 5px;
+  transition: all ease-out 400ms;
+  cursor: pointer;
+
+  z-index: 3;
+}
+
+.card-shadow {
+  border: none;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: all ease-out 400ms;
+}
+
+.card:hover,
+.card:focus {
+  transform: translate(0, -0.5rem);
+}
+.card-shadow:hover,
+.card-shadow:focus {
+  box-shadow: 0 0 15px 2px rgba(229, 226, 226, 0.657);
+}
+
+.card-header {
+  font-size: 1.5rem;
+}
+
+.background > img {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  z-index: -1;
+}
+
+.cards {
+  width: 76rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+.card.play-mode > .card-header,
+.card.play-mode > img {
+  display: none;
+}
+
+.card.play-mode > .card-image > img {
+  height: 250px;
+  border-radius: 3% 3% 3% 3%;
+}
+
+.card-image {
+  overflow: hidden;
+}
+.card-image > img {
+  display: block;
+  width: 100%;
+  max-height: 350px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 3% 3% 0% 0%;
+}
+
+.card-image + .card-header {
+  margin-top: 2rem;
+}
+
+h1.card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 1320px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  .wrapper {
+    position: relative;
+    top: 14rem;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-height: 1376px) {
+  .wrapper {
+    position: relative;
+    top: 14rem;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media screen and(max-width: 1190px) {
+  .wrapper {
+    top: 30rem;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .wrapper {
+    top: 30rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .wrapper {
+    top: 40rem;
+  }
+}

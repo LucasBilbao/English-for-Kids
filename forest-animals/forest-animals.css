@@ -1,0 +1,11 @@
+body {
+  background: #2287c1;
+}
+
+.card {
+  background: rgba(131, 55, 218, 0.822);
+}
+
+h1.card-header {
+  color: rgb(255, 255, 255);
+}

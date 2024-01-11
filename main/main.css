@@ -1,0 +1,14 @@
+body{
+  background: rgb(6, 67, 95);
+}
+
+.card {
+  background: rgba(131, 55, 218, 0.822);
+}
+
+h1.card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+}
